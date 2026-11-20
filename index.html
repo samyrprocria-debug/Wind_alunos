@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WIND SPORTS | Kitesurf & Windfoil</title>
+<style>
+:root{--o:#ff8a00;--y:#ffd21a;--b:#101010;--w:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:var(--b);color:var(--w);font-family:Arial,sans-serif}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:#080808;position:sticky;top:0;z-index:5}
+.logo{font-size:25px;font-weight:900}.logo span{color:var(--o)}
+nav a{color:white;text-decoration:none;margin:0 9px}
+button,.btn{background:var(--o);color:#111;border:0;padding:13px 19px;border-radius:7px;font-weight:bold;cursor:pointer;text-decoration:none}
+.hero{padding:100px 7%;min-height:520px;background:linear-gradient(90deg,#000e,#0004),url('https://kahunasurfhouse.eu/assets/cyprus-kitesurfing-photography-1650032453.jpg') center/cover}
+.hero h1{font-size:clamp(40px,7vw,75px);max-width:750px;margin:15px 0}
+.hero h1 span{color:var(--o)}
+.hero p{font-size:19px;max-width:550px;line-height:1.6}
+section{padding:65px 7%}
+h2{font-size:35px}
+.sub{color:#bbb;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.sport{height:350px;position:relative;overflow:hidden;border-radius:12px}
+.sport img{width:100%;height:100%;object-fit:cover}
+.sport div{position:absolute;bottom:0;left:0;right:0;padding:25px;background:linear-gradient(transparent,#000e)}
+.about{background:#f5f5f5;color:#111}
+.about strong{font-size:65px;color:var(--o)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.student{background:#222;border-radius:10px;overflow:hidden;position:relative}
+.student img{width:100%;height:220px;object-fit:cover}
+.student div{padding:14px}
+.tag{background:var(--y);color:#111;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:bold;display:inline-block;margin-top:8px}
+.featured{border:3px solid var(--o)}
+.star{position:absolute;top:10px;left:10px;background:var(--o);color:#111;padding:7px;border-radius:5px;font-weight:bold}
+.booking{background:var(--o);color:#111}
+form{background:white;color:#111;padding:24px;border-radius:12px;display:grid;grid-template-columns:1fr 1fr;gap:15px}
+label{font-weight:bold;font-size:14px}
+input,select{padding:14px;border:1px solid #ccc;border-radius:7px;width:100%;margin-top:7px}
+form button{grid-column:1/-1;background:#111;color:white}
+footer{padding:30px;text-align:center;background:#080808;color:#aaa}
+.secret{background:none;color:#777;font-size:12px;margin-top:10px}
+.modal{display:none;position:fixed;inset:0;background:#000d;z-index:20;align-items:center;justify-content:center;padding:15px}
+.modal.open{display:flex}
+.panel{background:#191919;padding:25px;border-radius:12px;width:min(650px,100%);max-height:90vh;overflow:auto}
+.panel input,.panel select{background:#292929;color:white;border-color:#555}
+.adminitem{display:flex;gap:10px;align-items:center;background:#292929;padding:10px;margin:10px 0;border-radius:8px}
+.adminitem img{width:55px;height:55px;object-fit:cover}
+.adminitem span{flex:1}
+@media(max-width:650px){
+ nav{display:none}.grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr 1fr}
+ form{grid-template-columns:1fr}
+ form button{grid-column:auto}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="logo">WIND<span>SPORTS</span></div>
+ <nav>
+  <a href="#aulas">Aulas</a>
+  <a href="#professor">Professor</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#agendar">Agendar</a>
+ </nav>
+ <a class="btn" href="#agendar">Agendar aula</a>
+</header>
+
+<div class="hero">
+ <p style="color:#ffd21a;font-weight:bold">KITESURF • WINDFOIL</p>
+ <h1>SINTA O VENTO.<br><span>DOMINE O MAR.</span></h1>
+ <p>Aprenda Kitesurf e Windfoil com acompanhamento profissional e 15 anos de experiência.</p>
+ <a class="btn" href="#agendar">QUERO APRENDER</a>
+</div>
+
+<section id="aulas">
+ <h2>NOSSAS AULAS</h2>
+ <p class="sub">Escolha seu esporte e descubra novas experiências no mar.</p>
+ <div class="grid">
+  <article class="sport">
+   <img src="https://www.realwatersports.com/cdn/shop/files/4B4A7318_x700.jpg?v=1713270266" alt="Prática de kitesurf">
+   <div><h2>KITESURF</h2><p>Aprenda a controlar a pipa e navegar.</p></div>
+  </article>
+  <article class="sport">
+   <img src="https://images.squarespace-cdn.com/content/62b17d91d15c1631dec0664d/1659646826224-02X9C765XCF4OBWYIEAT/18%2B-%2BWindfoil%2B1.png?content-type=image%2Fpng" alt="Prática de windfoil">
+   <div><h2>WINDFOIL</h2><p>Aprenda a deslizar sobre a água com o foil.</p></div>
+  </article>
+ </div>
+</section>
+
+<section class="about" id="professor">
+ <p style="color:#e87900;font-weight:bold">EXPERIÊNCIA E PAIXÃO PELO MAR</p>
+ <h2>APRENDA COM QUEM TEM EXPERIÊNCIA</h2>
+ <strong>15+</strong>
+ <p>São 15 anos de experiência nos esportes a vela, com acompanhamento de acordo com o nível e os objetivos de cada aluno.</p>
+ <a class="btn" href="#agendar">Conheça as aulas</a>
+</section>
+
+<section id="galeria">
+ <h2>GALERIA DE ALUNOS</h2>
+ <p class="sub">Cada conquista merece ser celebrada!</p>
+ <div class="gallery" id="gallery"></div>
+</section>
+
+<section class="booking" id="agendar">
+ <h2>AGENDE SUA AULA</h2>
+ <p>Preencha os dados e fale diretamente com o professor.</p>
+ <form id="booking">
+  <div><label>Nome completo</label><input name="nome" required placeholder="Seu nome"></div>
+  <div><label>Telefone / WhatsApp</label><input name="telefone" required placeholder="Seu telefone"></div>
+  <div><label>Modalidade</label>
+   <select name="modalidade"><option>Kitesurf</option><option>Windfoil</option></select>
+  </div>
+  <div><label>Experiência</label>
+   <select name="experiencia">
+    <option>Primeira aula</option>
+    <option>Iniciante</option>
+    <option>Já pratico</option>
+   </select>
+  </div>
+  <button type="submit">ENVIAR PELO WHATSAPP</button>
+ </form>
+</section>
+
+<footer>
+ <div class="logo">WIND<span>SPORTS</span></div>
+ <p>Kitesurf • Windfoil • 15 anos de experiência</p>
+ <button class="secret" onclick="login()">Acesso do professor</button>
+</footer>
+
+<div class="modal" id="login">
+ <div class="panel">
+  <h2>Área do professor</h2>
+  <input id="pass" type="password" placeholder="Senha">
+  <p><button onclick="entrar()">ENTRAR</button>
+  <button onclick="fechar()">FECHAR</button></p>
+  <p id="erro"></p>
+ </div>
+</div>
+
+<div class="modal" id="admin">
+ <div class="panel">
+  <h2>Painel do professor</h2>
+  <p>Adicionar fotos e escolher o aluno destaque.</p>
+  <form id="photoForm">
+   <div><label>Foto do aluno</label><input name="foto" type="file" accept="image/*" required></div>
+   <div><label>Nome do aluno</label><input name="nome" required></div>
+   <div><label>Status</label>
+    <select name="status">
+     <option>1ª aula ✅</option>
+     <option>Evoluindo 🌊</option>
+     <option>Concluiu a aula 🏄</option>
+    </select>
+   </div>
+   <button type="submit">ADICIONAR FOTO</button>
+  </form>
+  <div id="adminlist"></div>
+  <button onclick="fecharAdmin()">SAIR</button>
+ </div>
+</div>
+
+<script>
+const WHATSAPP="559891793197";
+const SENHA_DEMO="gold321";
+let alunos=[];
+try{alunos=JSON.parse(localStorage.getItem("wind_alunos")||"[]")}catch(e){alunos=[]}
+
+document.getElementById("booking").addEventListener("submit",e=>{
+ e.preventDefault();
+ const d=new FormData(e.target);
+ const nome=d.get("nome").trim();
+ const telefone=d.get("telefone").trim();
+ const modalidade=d.get("modalidade");
+ const experiencia=d.get("experiencia");
+ const mensagem=`Olá! Meu nome é ${nome}. Estou interessado(a) nas suas aulas.
+
+Nome: ${nome}
+Telefone: ${telefone}
+Modalidade: ${modalidade}
+Experiência: ${experiencia}`;
+ window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(mensagem),"_blank");
+});
+
+function login(){document.getElementById("login").classList.add("open")}
+function fechar(){document.getElementById("login").classList.remove("open")}
+function fecharAdmin(){document.getElementById("admin").classList.remove("open")}
+function entrar(){
+ if(document.getElementById("pass").value===SENHA_DEMO){
+  fechar();
+  document.getElementById("admin").classList.add("open");
+  render();
+ }else document.getElementById("erro").textContent="Senha incorreta";
+}
+
+function render(){
+ const gallery=document.getElementById("gallery");
+ const list=document.getElementById("adminlist");
+ if(!alunos.length){
+  gallery.innerHTML="<p class='sub'>As fotos dos alunos aparecerão aqui.</p>";
+  list.innerHTML="<p>Nenhuma foto cadastrada.</p>";
+  return;
+ }
+ gallery.innerHTML=alunos.map(a=>`
+  <article class="student ${a.destaque?'featured':''}">
+   ${a.destaque?'<span class="star">⭐ DESTAQUE</span>':''}
+   <img src="${a.foto}" alt="Foto de aluno">
+   <div><b>${esc(a.nome)}</b><br><span class="tag">${esc(a.status)}</span></div>
+  </article>`).join("");
+ list.innerHTML=alunos.map((a,i)=>`
+  <div class="adminitem">
+   <img src="${a.foto}" alt="">
+   <span>${esc(a.nome)}</span>
+   <button onclick="destacar(${i})">⭐</button>
+   <button onclick="excluir(${i})">Excluir</button>
+  </div>`).join("");
+}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function salvar(){
+ try{localStorage.setItem("wind_alunos",JSON.stringify(alunos))}
+ catch(e){alert("Armazenamento cheio. Use fotos menores.");}
+ render();
+}
+function destacar(i){
+ alunos=alunos.map((a,n)=>({...a,destaque:n===i}));
+ salvar();
+}
+function excluir(i){
+ if(confirm("Excluir esta foto?")){alunos.splice(i,1);salvar();}
+}
+document.getElementById("photoForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const f=new FormData(e.target);
+ const arquivo=f.get("foto");
+ if(!arquivo||arquivo.size>2*1024*1024){
+  alert("Escolha uma foto de até 2 MB.");return;
+ }
+ const reader=new FileReader();
+ reader.onload=()=>{
+  alunos.unshift({
+   nome:f.get("nome"),
+   status:f.get("status"),
+   foto:reader.result,
+   destaque:alunos.length===0
+  });
+  salvar();
+  e.target.reset();
+ };
+ reader.readAsDataURL(arquivo);
+});
+render();
+</script>
+</body>
+</html>
